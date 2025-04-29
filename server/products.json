@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "name": "Вилка из дерева",
+        "category": "wood",
+        "price": 1.20,
+        "image": "/uploads/fork.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ложка из кукурузы",
+        "category": "corn",
+        "price": 0.90,
+        "image": "/uploads/spoon.jpg"
+    }
+]

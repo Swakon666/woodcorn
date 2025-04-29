@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoodCorn | Экологичная посуда</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="/" class="logo">
+                <img src="images/logo.png" alt="WoodCorn" class="logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="#catalog">Каталог</a>
+                <a href="#about">О нас</a>
+                <a href="#contacts">Контакты</a>
+                <a href="/admin.html" class="btn-outline">Админ-панель</a>
+            </div>
+        </nav>
+
+        <div class="hero animate-slide-in">
+            <h1>Посуда из дерева и кукурузного крахмала</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Найти вилки, ложки...">
+                <button class="btn" onclick="searchProducts()">
+                    <svg class="search-icon" viewBox="0 0 24 24"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="catalog" id="catalog">
+        <div class="filters animate-fade-in">
+            <button class="filter-btn active" data-category="all">Все</button>
+            <button class="filter-btn" data-category="wood">Дерево</button>
+            <button class="filter-btn" data-category="corn">Кукуруза</button>
+        </div>
+        
+        <div class="products-grid"></div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
